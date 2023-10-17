@@ -1,0 +1,47 @@
+.navbar{
+    padding-left: 5px;
+    background-color: white;
+}
+.header{
+    top: 0;
+    box-shadow: 0px -4px 10px 0px;
+    font-family: serif; 
+}
+#logIn:hover{
+    color: rgb(26, 165, 193) !important;
+    border-color: rgb(26, 165, 193) !important;
+}
+#logo{
+    font-family: 'Rock Salt', cursive;
+    font-size: x-large;
+    color: darkblue;
+}
+.flag{
+    height:20px; 
+    width:23px; 
+    margin-right:5px; 
+    border-radius:10px;
+}
+.dropdown-menu > li :hover{
+    color: black !important;
+}
+.hover-blue:hover{
+    color: rgb(26, 165, 193) !important;
+}
+.navbar-collapse ul{
+    padding: 0;
+}
+.baseline{
+    display: flex !important;
+    align-items: center;
+}
+.navbar-expand-sm{
+    width: 90%;
+    margin: auto;
+}
+.navbar-toggler:focus{
+    box-shadow: 0 0 0px 0px !important;
+}
+.offcanvas{
+    width: 60% !important;
+}
