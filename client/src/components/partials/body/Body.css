@@ -42,3 +42,52 @@
 .mato > span{
     color: rgb(109, 227, 109);
 }
+
+@media (max-width:450px){
+    .services{
+        font-size: smaller !important;
+        padding: 5px !important;
+    }
+    [alt="doc"]{
+        width: 70% !important;
+        margin-left: 15%;
+    }
+}
+
+.categories{
+    background-color: rgb(244, 240, 240);
+    padding: 4%;
+}
+.category-img{
+    width: 100%;
+    object-fit: fill !important;
+    filter: brightness(0.5);
+    box-shadow: 0 0 4px 5px  #4145581a;
+}
+.category-img:hover{
+    transition: all;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 0 0;
+    transition-delay: 0s;
+}
+.category a:hover{
+    text-decoration: underline;
+    color: lightgreen;
+}
+
+.category{
+    position: relative;
+    overflow: hidden;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.category a{
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

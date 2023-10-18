@@ -31,7 +31,7 @@ const Language = () => {
                 <span className="text-muted hover-blue">{lan.name}</span>
             </div>
             <ul className="dropdown-menu" style={{minWidth:"125px"}}>
-                { languages.map(item => {if(item.id !== lan.id) return <li><span className="dropdown-item text-muted" onClick={() => { changeLang(item.id) }}><img className="flag" src={require('../../images/'+item.src)} alt="uz-flag"></img>{item.name}</span></li>} )}
+                { languages.map(item => {if(item.id !== lan.id) return <li key={item.id}><span className="dropdown-item text-muted" onClick={() => { changeLang(item.id) }}><img className="flag" src={require('../../images/'+item.src)} alt="uz-flag"></img>{item.name}</span></li>} )}
             </ul>
         </>
     )

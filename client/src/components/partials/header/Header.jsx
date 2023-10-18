@@ -8,7 +8,7 @@ const Header = () => {
     const { t } = useTranslation();
 
     return (
-       <div className="container-fluid">
+       <div className="container-fluid" style={{overflow:"visible"}}>
          <nav className="navbar navbar-expand-sm">
           <NavLink className="navbar-brand fw-bold" to="/#" id="logo">
             UzMed

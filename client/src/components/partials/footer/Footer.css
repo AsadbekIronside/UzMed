@@ -1,0 +1,50 @@
+.rights{
+    font-size: smaller;
+    background-color: rgb(14, 14, 97);
+    padding: 0.5%;
+    padding-top: 2%;
+    color: white;
+}
+.rights p{
+    text-align: center;
+}
+.footer{
+    padding: 4%;
+    background-color: rgb(23, 23, 167);
+    overflow-x: hidden;
+}
+.footer-link a{
+    color: white;
+    text-decoration: none;
+}
+.footer-link a:hover{
+    color: rgb(253, 255, 119);
+    text-decoration: underline;
+}
+.footer-link{
+    margin: auto;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.footer-media{
+    padding: 3%;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: rgb(23, 23, 167);
+    color: rgb(167, 238, 144);
+}
+.footer-media a{
+    color: white;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer-media h6{
+    vertical-align: middle;
+    text-align: center;
+}
+.footer-media p{
+    text-align: center;
+}
+.footer-media a:hover{
+    color: rgb(253, 255, 119);
+}
