@@ -1,0 +1,26 @@
+.services{
+    color: black !important;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Proza Libre', sans-serif;
+}
+.services:hover{
+    background-color: lightgray;
+}
+.services:active{
+    color: blue;
+}
+#serviceGroup{
+    background-color: rgb(241, 238, 238);
+    overflow-x: auto;
+    position: sticky !important;
+}
+
+@media (max-width:450px){
+    .services{
+        font-size: smaller !important;
+        padding: 5px !important;
+    }
+}

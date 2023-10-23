@@ -1,8 +1,8 @@
 .rights{
     font-size: smaller;
     background-color: rgb(14, 14, 97);
-    padding: 0.5%;
-    padding-top: 2%;
+    padding: 3%;
+    padding-bottom: 2%;
     color: white;
 }
 .rights p{
@@ -10,7 +10,7 @@
 }
 .footer{
     padding: 4%;
-    background-color: rgb(23, 23, 167);
+    background-color: var(--blue);
     overflow-x: hidden;
 }
 .footer-link a{
@@ -30,7 +30,7 @@
     padding: 3%;
     padding-bottom: 0;
     padding-left: 0;
-    background-color: rgb(23, 23, 167);
+    background-color: var(--blue);
     color: rgb(167, 238, 144);
 }
 .footer-media a{
@@ -47,4 +47,138 @@
 }
 .footer-media a:hover{
     color: rgb(253, 255, 119);
+}
+
+.search-clinic{
+    padding: 4%;
+    padding-bottom: 0;
+    background-color: var(--blue);
+}
+.search-clinic h3{
+    color: white;
+    text-align: center;
+}
+.search-btn{
+    padding: 9px 20px;
+    background-color: var(--red);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+}
+.search-input-search{
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 45%;
+    margin-left: 5%;
+    border-right: 0.5px solid rgb(152, 146, 146);
+    padding-left: 40px;
+    padding-top: 6px;
+}
+.search-input-search span{
+    font-size: smaller;
+    display: block;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.search-input-search input{
+    border: 0;
+}
+.search-input-search input:focus{
+    outline: none;
+}
+.search-location{
+    background-color: white;
+    width: 40%;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+.search-location span{
+    font-size: smaller;
+    display: block;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.search-location input{
+    border: 0;
+}
+.search-location input:focus{
+    outline: none;
+}
+.search-btn-div{
+    background-color: white;
+    padding: 9px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.search-clinic2{
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+@media(max-width:796px){
+    #serachInput{
+        display: none !important;
+    }
+    .search-clinic2{
+        display: block !important;
+    }
+}
+#serachInput{
+    margin-bottom: 15px;
+}
+#offcanvasSearch{
+    width: 100vw !important;
+}
+.search-btn-canvas{
+    padding: 4px 15px;
+    padding-bottom: 5px;
+    background-color: var(--red);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+}
+.close-btn{
+    border: 0;
+    background-color: inherit;
+}
+.offcanvas-form{
+    background-color: var(--blue);
+    padding: 16px;
+    padding-top: 0;
+}
+.offcanvas-form label{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+}
+[for="searchLocation"]{
+    margin-top: 15px;
+}
+.offcanvas-form input:focus{
+    outline: 2px solid white !important;
+    border: 1.5px solid var(--blue);
+    box-shadow: none !important;
+}
+.current-location{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--lightblue);
+    text-decoration: none;
+}
+.current-location:hover{
+    color: var(--blue);
+}
+.find-current-location{
+    width: 40%;
+    margin-left: 50%;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: none;
 }

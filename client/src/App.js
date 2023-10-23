@@ -1,17 +1,21 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './components/headerElems/Home/Home'
-import About from './components/headerElems/About/About'
-import Layout from './components/partials/layout/Layout'
+import Body from './components/partials/body/Body';
+import Footer from './components/partials/footer/Footer';
+import Header from './components/partials/header/Header';
+import Nav from './components/partials/body-nav/Nav';
+import FindDoctor from './components/partials/find-doctor/FindDoctor';
 
 function App() {
   return (
     <Router>
+      <Header/>
+      <Nav/>
        <Routes>
-        <Route path='/' element={<Layout/>}/>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
+        <Route path='/' element={<Body/>}/>
+        <Route path='/find-doctor' element={<FindDoctor/>}/>
        </Routes>
+      <Footer/>
     </Router>
   );
 }

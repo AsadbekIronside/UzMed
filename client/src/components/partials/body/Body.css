@@ -1,27 +1,9 @@
+
 .container-fluid{
     overflow-x: hidden;
 }
-#serviceGroup{
-    background-color: rgb(241, 238, 238);
-    overflow-x: auto;
-    position: sticky !important;
-}
-.services{
-    color: black !important;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 0;
-    border-radius: 10px;
-    font-family: 'Proza Libre', sans-serif;
-}
-.services:hover{
-    background-color: lightgray;
-}
-.services:active{
-    color: blue;
-}
 #backImage{
-    background-color: rgb(21, 21, 142);
+    background-color: var(--blue);
     overflow: auto;
 }
 
@@ -44,13 +26,12 @@
 }
 
 @media (max-width:450px){
-    .services{
-        font-size: smaller !important;
-        padding: 5px !important;
-    }
     [alt="doc"]{
         width: 70% !important;
         margin-left: 15%;
+    }
+    .get-brief-answers{
+        padding: 15px !important;
     }
 }
 
@@ -81,6 +62,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
 }
+.categories h4{
+    font-family: 'Carter one';
+}
 
 .category a{
     position: absolute;
@@ -90,4 +74,148 @@
     font-weight: bold;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width:1300px){
+    .order-2{
+        margin-left: 5.5% !important;
+        margin-top: 2%  !important;
+    }
+}
+
+/* news */
+
+.news{
+    padding: 4%;
+    background-color: whitesmoke;
+}
+.news h4{
+    font-family: 'Carter one';
+}
+
+@media (max-width:1220px){
+    .news-video{
+        width: 450px !important;
+        height: 250px !important;
+    }
+}
+
+@media (max-width:1010px){
+    .news-video{
+        width: 400px !important;
+        height: 210px !important;
+    }
+}
+@media (max-width:905px){
+    .news-video{
+        width: 350px !important;
+        height: 180px !important;
+    }
+}
+@media (max-width:359px){
+    .news-video{
+        width: 250px !important;
+        height: 120px !important;
+    }
+}
+/* Questions and answers */
+
+.question-answer{
+    background-color: rgb(236, 236, 236);
+}
+.question-answer .row {
+    row-gap: 15px;
+}
+
+.question-answer h4{
+    font-family: 'Carter one';
+    font-weight: 100;
+}
+.qc-question{
+    width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: larger;
+    font-weight: 600;
+}
+.question-card{
+    padding: 15px;
+    background-color: white;
+}
+.qc-doctor-profile{
+    display: flex;
+    gap: 20px;
+}
+.qc-doctor-profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.qc-doctor-profile a{
+    margin-bottom: 0 !important;
+}
+.qc-doctor-profile p{
+    font-size: smaller;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
+}
+.qc-doctor-profile div{
+    padding-top: 5px;
+}
+.qc-doctor-consult span{
+    color: rgb(119, 116, 116);
+    font-size: larger;
+    cursor: pointer;
+}
+.qc-footer{
+    display: flex;
+    justify-content: space-between
+}
+.question-card a{
+    color: var(--darkred);
+    font-weight: 500;
+    text-decoration-thickness: 0;
+}
+.question-card a:hover{
+    color: black !important;
+}
+
+/* get grief answers */
+
+.get-brief-answers{
+    background-color: white;
+    padding: 25px;
+    border: 1px solid var(--darkred);
+}
+.get-brief-answers p{
+    font-size: smaller;
+    color: rgb(90, 89, 89);
+}
+.get-brief-answers h5{
+    margin-bottom: 0 !important;
+}
+.get-brief-answers textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.get-brief-answers textarea:focus{
+    outline: none;
+}
+.get-brief-answers textarea{
+    border-color: rgb(202, 200, 200);
+    padding: 10px 15px;
+}
+.question-card:hover{
+    box-shadow: 0 0 10px 5px rgb(174, 172, 172);
+    transition-duration: 0.4s;
+}
+.get-brief-answers button{
+    padding: 5px 10px;
+    padding-bottom: 7px;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
