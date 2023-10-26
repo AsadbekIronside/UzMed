@@ -1,0 +1,33 @@
+.pagination button {
+    color:  rgb(3, 3, 203);
+    float: left;
+    padding: 6px 13px;
+    transition: background-color .3s;
+    border: 1px solid rgb(195, 195, 195);
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  .pagination button.active {
+    background-color: rgb(3, 3, 203);
+    color: white;
+  }
+  
+  .pagination button:hover:not(.active) {
+    background-color: rgb(120, 115, 255);
+    color: white;
+  }
+  .pagination > button:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .pagination > button:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+@media (max-width:450px){
+  .pagination button{
+    font-size: small
+  }
+}

@@ -1,0 +1,105 @@
+.find-doctor{
+    background-color: #f0f0f0;
+    color: black;
+    padding: 1% 3%;
+    margin: 15px 0;
+}
+.list-speciality{
+    list-style: none;
+    column-count: 3;
+    padding: 20px;
+}
+.list-speciality ul{
+    list-style: none;
+}
+@media (max-width:700px){
+    .list-speciality{
+        column-count: 1 !important;
+        padding: 0 !important;
+    }
+    .speciality-group{
+        display: block !important;
+        margin-bottom: 2% !important;
+    }
+    .list-speciality h4{
+        width: 100% !important;
+        border-radius: 0 !important;
+        height: 30px !important;
+        padding: 3px !important;
+    }
+    .speciality-group ul{
+        margin-left: 5%;
+    }
+
+}
+@media (max-width:992px){
+    .list-speciality{
+        column-count: 2;
+        padding: 20px;
+    }
+}
+
+.list-speciality span{
+    color:white;
+}
+.list-speciality h4{
+    border-radius: 50%;
+    background-color: darkcyan;
+    width: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.speciality-group{
+    display: flex;
+    margin-bottom: 5%;
+}
+.speciality-group ul{
+    padding-left: 16px;
+}
+.speciality-group a{
+    color: rgb(27, 27, 238);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.speciality-group a:hover{
+    color: darkblue;
+}
+.btn-expand{
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid  darkcyan;
+    color: darkcyan;
+    font-weight: 500;
+}
+.btn-expand:hover{
+    color: black;
+    border-color: black;
+}
+/* List illness */
+
+.list-illnesses{
+    list-style: none;
+    column-count: 3;
+    width: 90%;
+    margin: auto;
+}
+@media (max-width:450px){
+    .list-illnesses{
+        column-count: 1 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+.list-illnesses a{
+    text-decoration: none;
+    color: rgb(27, 27, 238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list-illnesses a:hover{
+    color: darkblue;
+    color: var(--blue);
+}

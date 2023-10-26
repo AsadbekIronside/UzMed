@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTelegram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { faClose, faMagnifyingGlass, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import $ from "jquery"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import getLocationInfo from "../../../functions/getLocationInfo";
 
 const Footer = () => {
@@ -13,7 +13,6 @@ const Footer = () => {
     // hooks
     const [ showCanvas, setShowCanvas ] = useState(false);
     const [ location, setLocation ] = useState("");
-    const [ searchDoctor, setSearchDoctor ] = useState(false);
  
     const searchClinic = () => {
         
@@ -52,7 +51,7 @@ const Footer = () => {
             $('.search-location input').focus();
         }
     }
-    $(document).on('click', (event) => {
+    $(document).on('click', (event) => {    
 
         const el = $('.search-location span');
         const el2 = $('.search-location input');

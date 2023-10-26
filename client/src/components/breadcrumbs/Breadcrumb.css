@@ -1,0 +1,26 @@
+.bread-nav{
+    padding: 23px;
+    padding-bottom: 1px;
+    padding-left: 70px;
+}
+@media (max-width:760px){
+    .bread-nav{
+        padding-left: 40px;
+    }
+}
+@media (max-width:420px){
+    .bread-nav{
+        padding-left: 20px;
+    }
+    .breadcrumb-item{
+        font-size: smaller;
+    }
+}
+.bread-nav a{
+    color: black;
+    font-weight: 500;
+    text-decoration-thickness: 0;
+}
+.bread-nav a:hover{
+    color: rgb(3, 3, 201);
+}
