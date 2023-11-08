@@ -7,7 +7,7 @@
     box-shadow: 0px -4px 10px 0px;
     font-family: serif; 
 }
-#logIn:hover{
+.logIn:hover{
     color: rgb(26, 165, 193) !important;
     border-color: rgb(26, 165, 193) !important;
 }
@@ -36,12 +36,173 @@
     align-items: center;
 }
 .navbar-expand-sm{
-    width: 90%;
-    margin: auto;
+    width: 92%;
+    margin-right: 3%;
+    margin-left: 5%;
 }
 .navbar-toggler:focus{
     box-shadow: 0 0 0px 0px !important;
 }
 .offcanvas{
     width: 60% !important;
+}
+
+/* login modal  */
+
+.login-modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.login-modal-dialog{
+    padding-top: 150px;
+}
+.login-modal-content{
+    background-color: white;
+    top:200px;
+    left: 140px;
+    width: 38%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 7px 0;
+}
+.login-modal-header{
+    padding: 3% 5%;
+    position: relative;
+    border-bottom: 1px solid rgb(215, 211, 211);
+}
+.login-modal-header h4{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.login-modal-header button{
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    color: var(--red);
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+.login-modal-header button:hover{
+    color: rgb(186, 12, 12);
+}
+.login-modal-body{
+    padding: 3% 5%;
+}
+.login-input{
+    width: 100%;
+    border: 1px solid rgb(198, 198, 198);
+    padding: 8px;
+    border-radius: 10px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.login-input:focus{
+    outline: 1.5px solid lightgray;
+}
+.login-label{
+    margin-bottom: 3px;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    opacity: 0.9;
+}
+.login-modal-body button{
+    color: white;
+    background-color: var(--red);
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.login-modal-body button:hover{
+    background-color: rgb(190, 19, 19);
+}
+
+#phone_code{
+    width: 22%;
+    color: black;
+}
+
+@media(max-width:1200px){
+    .login-modal-content{
+        width: 50%;
+    }
+    #phone_code{
+        width: 22%;
+    }
+}
+@media(max-width:900px){
+    .login-modal-content{
+        width: 70%;
+    }
+    .login-input{
+        padding-left: 15px;
+    }
+    #phone_code{
+        width: 18%;
+    }
+}
+@media(max-width:500px){
+    .login-modal-content{
+        width: 98%;
+    }
+    #phone_code{
+        width: 20%;
+    }
+    .login-input{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 7px;
+        margin-bottom: 10px;
+    }
+    .login-modal-dialog{
+        padding-top: 0;
+    }
+}
+.input-valid{
+    margin-left: 15%;
+}
+/* user account */
+
+.user-profile{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 3px;
+    color: rgb(90, 90, 90);
+}
+#send-another-code:hover{
+    color: black;
+}
+
+#send-another-code{
+    color: darkblue;
+    text-decoration: underline;
+}
+/* sweet alerts */
+.swal2-html-container{
+    margin: 12px !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px !important;
+}
+
+/* user */
+
+.user-img img{
+    width: 100%;
+}
+.user-img{
+    width:30%;
 }

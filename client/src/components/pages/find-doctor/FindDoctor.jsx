@@ -79,7 +79,7 @@ const FindDoctor = () => {
             </div>
             <div className="mb-5">
                 <ul className="list-illnesses">
-                    {illnesses.map((elem, index )=><li key={index.toString()}><Link>{elem}</Link></li> )}
+                    {illnesses.map((elem, index )=><li key={index.toString()}><Link to="doctors-list" state={elem}>{elem}</Link></li>)}
                 </ul>
             </div>
         </div>
