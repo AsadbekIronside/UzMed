@@ -14,7 +14,7 @@ const Nav = () => {
             <Link className="services" to="/"><i className="bi bi-calendar-day me-1 fa-lg" style={{color:"brown"}}></i>{t('bookApp')}</Link>
             <Link className="services" to="/"><FontAwesomeIcon icon={faHeartPulse} color="red" className="me-1" size="lg"/> {t('treatment')}</Link>
             <Link className="services" to="/"><i className="fa-sharp fa-solid fa-question fa-lg" style={{color:"darkblue"}}></i> {t('askQuestion')}</Link>
-            <Link className="services" to="/"><i className="bi bi-cart3 fa-lg me-1" style={{color:"darkorange"}}></i> {t('goodCart')}</Link>
+            <Link className="services" to="/good-cart"><i className="bi bi-cart3 fa-lg me-1" style={{color:"darkorange"}}></i> {t('goodCart')}</Link>
             <Link className="services" to="/"><i className="bi bi-newspaper fa-lg me-1" style={{color:"purple"}}></i> {t('healthFeed')}</Link>
         </div>
     )

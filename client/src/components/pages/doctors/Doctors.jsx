@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faXmark, faStar, faPhone, faKeyboard, faCalendarDays, faChevronDown, faFilter, faSliders } from '@fortawesome/free-solid-svg-icons'
 import getLocationInfo from '../../../functions/getLocationInfo'
 import { useCallback, useState } from 'react';
-import Breadcrumb  from "../../breadcrumbs/Breadcrumb"
-import Pagination from '../../pagination/Pagination'
-import Radio from '../../radios/Radio'
-import Checkbox from '../../checkbox/Ckeckbox'
+import Breadcrumb  from "../../breadcrumbs/Breadcrumb";
+import Pagination from '../../pagination/Pagination';
+import Radio from '../../radios/Radio';
+import Checkbox from '../../checkbox/Ckeckbox';
+import Cookie from 'js-cookie';
 
 const Doctors = () => {
 
@@ -96,6 +97,29 @@ const Doctors = () => {
     window.addEventListener("resize", ()=> {
         setWidth(window.screen.availWidth);
     });
+
+    const callDoctor = (id) => {
+        if(Cookie.get('user')){
+
+        }else{
+            document.getElementById('login').click();
+        }
+    }
+    const textDoctor = (id) => {
+        if(Cookie.get('user')){
+
+        }else{
+            document.getElementById('login').click();
+        }
+    }
+    const bookAppointment = (id) => {
+        if(Cookie.get('user')){
+
+        }else{
+            document.getElementById('login').click();
+        }
+    }
+
     return(
         <div>
             <Breadcrumb items={[{name:"home", url:"/"}, {name:"findDoctors", url:"/find-doctor"} , {name:state}]}/>
@@ -285,9 +309,9 @@ const Doctors = () => {
                                             </div>
                                         </div>
                                         <div className='find-doctor-contact'>
-                                            <p><button className='btn btn-outline-success'><FontAwesomeIcon icon={faPhone}/> Qo'ng'iroq qilish</button></p>
-                                            <p><button className='btn btn-outline-danger'><FontAwesomeIcon icon={faKeyboard} /> Text yozish</button></p>
-                                            <p><button className='btn btn-outline-secondary'><FontAwesomeIcon icon={faCalendarDays}/> Uchrashuv belgilash</button></p>
+                                            <p><button className='btn btn-outline-success' onClick={()=>{callDoctor(item.id);}}><FontAwesomeIcon icon={faPhone}/> Qo'ng'iroq qilish</button></p>
+                                            <p><button className='btn btn-outline-danger' onClick={()=>{textDoctor(item.id);}}><FontAwesomeIcon icon={faKeyboard} /> Text yozish</button></p>
+                                            <p><button className='btn btn-outline-secondary' onClick={()=>{bookAppointment(item.id);}}><FontAwesomeIcon icon={faCalendarDays}/> Uchrashuv belgilash</button></p>
                                         </div>
                                 </div>
                             </div>)} 

@@ -1,0 +1,417 @@
+.user-sidebar-menu{
+    width: 320px;
+    padding-right: 0;
+    background-color: var(--darkblue);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.user-sidebar-menu ul{
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.user-sidebar-menu ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 0;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.user-sidebar-menu ul a:hover{
+    color: rgb(183, 178, 178);
+}
+
+.user-header{
+    position: fixed;
+    width: calc(100% - 320px);
+    background-color: white;
+    right: 0;
+    padding: 10px 35px;
+    padding-left: 25px;
+    box-shadow: 5px -1px 13px 2px rgb(192, 191, 191);
+    display: flex;
+    justify-content: end;
+    column-gap: 30px;
+}
+.user-header div:last-child{
+    display: inline-flex;
+    align-items: center;
+    /* color: rgb(14, 186, 14); */
+    color: var(--lightblue);
+    opacity: 0.7;
+    cursor: pointer;
+}
+.menu-logo a{
+    color: lawngreen;
+    text-decoration: none;
+    font-size: 2.2rem;
+}
+.menu-logo{
+    width: 100%;
+    padding: 60px;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+}
+
+/* user profile */
+.user-body{
+    width: calc(100% - 320px);
+    float: right;
+    margin-top:4.5rem;
+    padding: 20px;
+}
+.user-profile-data{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.user-profile-data div:first-child{
+    width: 150px;
+    margin-left: 10px;
+}
+.user-profile-data img{
+    width: 100%;
+}
+.user-profile-data button{
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: gold;
+}
+.user-profile-data button:hover{
+    background-color: rgb(225, 193, 8);
+}
+
+/* ask question */
+.user-ask-question{
+    margin-top: 30px;
+    padding: 20px 5px;
+}
+.user-h{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.user-ask-question div{
+    border: 1px solid rgb(117, 210, 213);
+    padding: 20px;
+    border-radius: 20px;
+}
+.user-ask-question h6{
+    opacity: 0.8;
+}
+.user-ask-question textarea{
+    width: 100%;
+    border: 1px solid rgb(173, 172, 172);
+}
+.user-ask-question textarea:focus{
+    outline: none;
+    border: 1px solid rgb(58, 57, 57);
+    padding-left: 10px;
+}
+.user-ask-question button{
+    background-color: var(--red);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.user-ask-question button:hover{
+    background-color: rgb(183, 24, 24);
+}
+.user-card-img{
+    width: 310px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.user-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.user-cards{
+    position: relative;
+}
+.user-cards p:first-of-type{
+    position: absolute;
+    top: 118px;
+    left: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.user-cards p:last-of-type{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.user-cards div{
+    position: absolute;
+}
+.user-cards button{
+    border: 0;
+    background-color: gold;
+    font-size: smaller;
+    position: absolute;
+    top: 70px;
+    left: 240px;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+.user-cards button:hover{
+    background-color: rgb(225, 193, 8);
+}
+.user-cards span:first-of-type{
+    position: absolute;
+    top: 140px;
+    left: 238px;
+}
+.user-cards span:last-of-type{
+    position: absolute;
+    top: 140px;
+    left: 170px;
+    cursor: pointer;
+}
+/*  */
+.active-link{
+    background-color: white;
+    color: var(--darkblue) !important;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+@media (max-width:960px){
+
+    .user-sidebar-menu{
+        width:100px;
+        padding-top: 45px;
+    }
+    .user-body{
+        width: calc(100% - 100px);
+    }
+    .user-header{
+        width: calc(100% - 100px);
+    }
+    .menu-logo{
+        display: none;
+    }
+    .user-sidebar-menu a{
+        flex-wrap: wrap;
+        padding-left: 0 !important;
+        justify-content: center;
+    }
+    .user-sidebar-menu span{
+        font-size: smaller;
+        font-weight: 400;
+        text-align: center;
+    }
+    .user-sidebar-menu ul{
+        padding-left: 4px;
+    }
+}
+@media (max-width:576px){
+    .user-sidebar-menu{
+        display: none;
+        padding-top: 0;
+        box-shadow:  5px 2px 14px 5px #7d7d86;
+    }
+    .user-body{
+        width: 100%;
+    }
+    .user-header{
+        width: 100%;
+        padding: 22px;
+    }
+    .user-profile-data div:first-of-type{
+        width: 110px;
+    }
+    .user-ask-question div{
+        padding: 10px 20px;
+    }
+    .user-header button{
+        visibility: visible !important;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+    }
+    .user-ask-question{
+        margin-top: 10px;
+    }
+    .user-sidebar-menu ul a{
+        justify-content: left;
+        padding-left: 20px !important;
+        margin-left: 5px;
+    }
+    .user-sidebar-menu span{
+        font-size: 20px;
+    }
+    .menu-logo{
+        display: block;
+        padding-left: 30px;
+        position: relative;
+    }
+    .menu-logo span{
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+    .menu-logo i{
+        -webkit-text-stroke: 1px;
+    }
+    .menu-logo span:hover{
+        color: rgb(216, 213, 213);
+    }
+    .user-profile-data div:last-of-type p{
+        margin-bottom: 4px;
+    }
+    .user-body{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .user-profile-data button{
+        padding: 6px 14px;
+    }
+    .payment-check{
+        font-size: smaller;
+    }
+    .payment-check span:last-child{
+        bottom: 5px;
+    }
+}
+.user-header button{
+    visibility: hidden;
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.user-sidebar-canvas{
+    display: block;
+    z-index: 3;
+    width: 300px;
+}
+
+/* user payment body */
+
+.payment-user-photo{
+    width: 70px;
+    float: left;
+}
+.payment-user-photo img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+.payment-check{
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px rgb(228, 225, 225);
+    background-color: ghostwhite;
+    position: relative;
+    padding-bottom: 40px;
+}
+.payment-check span:last-child{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+}
+
+/* user settings */
+
+.user-settings-img{
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 2px #cecece;
+    height: 150px;
+}
+.user-settings-img img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    height: 100%;
+}
+.user-settings-form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.user-settings-form div{
+    width: 250px;
+}
+.user-settings-label{
+    display: block;
+    margin: 0 0 5px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+}
+.user-settings-input{
+    border: 1px solid rgb(202, 197, 197);
+    padding: 7px 15px;
+    border-radius: 7px;
+    margin-bottom: 17px;
+    opacity: 0.8;
+}
+.user-settings-input:focus{
+    outline: 2px solid rgb(180, 225, 243);
+    border-color: rgb(10, 162, 222);
+}
+.user-settings-form button{
+    border: none;
+    padding: 8px 30px;
+    background-color: rgb(10, 162, 222);
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.user-settings-form button:hover{
+    background-color: var(--lightblue);
+}
+
+@media(max-width:1000px){
+    .user-settings-form{
+        padding: 0 5% !important;
+    }
+}
+@media(max-width:700px){
+    .user-settings-form div{
+        width: 100%;
+    }
+    .user-settings-input{
+        width: 90%;
+    }
+    .user-settings-form{
+        margin-top: 10px;
+    }
+    .user-settings-img{
+        width: 110px;
+        height: 110px;
+    }
+}
+/* sweet alert */
+
+.delete-account{
+    border-radius: 30px;
+    padding:15px 0;
+    padding-top: 0;
+}

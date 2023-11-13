@@ -1,0 +1,38 @@
+.cart-nav{
+    background-color: black;
+}
+.cart-nav-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.last-cart-menu .cart-dropdown-menu{
+    transform: translateX(-105px);
+}
+.cart-dropdown button{
+    font-weight: 500;
+}
+.cart-dropdown-menu a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding: 10px; */
+}
+@media (max-width:1075px){
+    .cart-nav-body{
+        width:97%;
+        text-wrap: nowrap;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .cart-dropdown button{
+        font-size: smaller;
+    }
+}
+@media (max-width:850px){
+    .cart-nav-body{
+        overflow-x: auto;
+        justify-content: start;
+    }
+}

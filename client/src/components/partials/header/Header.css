@@ -11,9 +11,12 @@
     color: rgb(26, 165, 193) !important;
     border-color: rgb(26, 165, 193) !important;
 }
-#logo{
+.logo{
     font-family: 'Rock Salt', cursive;
     font-size: x-large;
+    color: darkblue;
+}
+.logo:hover{
     color: darkblue;
 }
 .flag{
@@ -135,7 +138,6 @@
     width: 22%;
     color: black;
 }
-
 @media(max-width:1200px){
     .login-modal-content{
         width: 50%;
@@ -172,6 +174,7 @@
         padding-top: 0;
     }
 }
+
 .input-valid{
     margin-left: 15%;
 }
@@ -196,13 +199,4 @@
     margin: 12px !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px !important;
-}
-
-/* user */
-
-.user-img img{
-    width: 100%;
-}
-.user-img{
-    width:30%;
 }

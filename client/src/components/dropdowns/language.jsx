@@ -24,7 +24,7 @@ const Language = () => {
 
     return(
         <>
-           <div className="baseline" data-bs-toggle="dropdown" aria-expanded="false">
+           <div className="baseline" data-bs-toggle="dropdown" aria-expanded="false" style={{cursor:"pointer"}}>
                 <span>
                     <img className="flag" src={require('../../images/'+lan.src)} alt="uz-flag"></img>
                 </span>

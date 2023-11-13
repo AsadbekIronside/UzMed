@@ -44,10 +44,9 @@ export async function sendCode(req, res) {
             const result = await check_num_exists(phoneNumber);
             // console.log(result);   
             if (result[0]) {
-                // req.session.user = result[0];
-                res.cookie('user', result[0], {
-                    maxAge: 30 * 24 * 60 * 60 * 1000,
-                    httpOnly: false
+                console.log(result[0]);
+                res.cookie('user', JSON.stringify(result[0]), {
+                    maxAge: 30 * 24 * 60 * 60 * 1000
                 });
                 // console.log(JSON.stringify(req.cookies));
                 res.json({ isMatched: true, ok: true, result: true, user: result[0] });
