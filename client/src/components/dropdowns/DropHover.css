@@ -8,10 +8,10 @@
     list-style: none;
     padding:0;
     border-radius: 3px;
-    box-shadow: 5px 4px 15px 2px #555555;
+    box-shadow: 5px 4px 9px 1px #b9b9b9;
     z-index: 3;
     min-width: 230px;
-    max-height: 70%;
+    max-height: 500px;
     overflow-y: auto;
 }
 .cart-dropdown-menu a{
@@ -40,6 +40,7 @@
     background-color: inherit;
     border: none;
     padding: 8px 0;
+    white-space: nowrap;
 }
 .cart-dropdown button:hover{
     background-color: rgb(86, 82, 82);

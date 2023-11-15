@@ -23,6 +23,8 @@ export async function deleteUser(req, res) {
         const id = parseInt(JSON.parse(req.cookies['user'])['id']);
         const result = await delete_user(id);
         res.json({ ok: result });
+        if (result)
+            console.log('user deleted successfully');
     }
     catch (error) {
         console.log(error);

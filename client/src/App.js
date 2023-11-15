@@ -9,19 +9,25 @@ import Doctors from './components/pages/doctors/Doctors';
 import ServerError from './components/pages/505/ServerError';
 import UserHeader from './components/pages/userProfile/UserHeader';
 import UserProfile from './components/pages/userProfile/UserProfile';
-import CartHeader from './components/pages/good-cart/cart-header/CartHeader';
-import CartNav from './components/pages/good-cart/cart-nav/CartNav';
+import CartBody from './components/pages/good-cart/cart-body/CartBody';
+import CartLayout from './components/pages/good-cart/cart-layout/CartLayout';
+import Layout from './components/partials/Layout/Layout';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<><Header/><Nav/><Body/><Footer/></>}/>
-        <Route path='/find-doctor' element={<><Header/><Nav/><FindDoctor/><Footer/></>} />
-        <Route path='/find-doctor/doctors-list' element={<><Header/><Nav/><Doctors/><Footer/></>} />
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Body/>}/>
+          <Route path='/find-doctor' element={<FindDoctor/>} />
+          <Route path='/find-doctor/doctors-list' element={<Doctors/>} />
+        </Route>
         <Route path='/error-500' element={<ServerError />}/>
         <Route path='/user-profile/:page' element={<><UserHeader/><UserProfile/></>}/>
-        <Route path='/good-cart' element={<><CartHeader/><CartNav/><Footer/></>}/>
+        <Route path='/good-cart' element={<CartLayout/>}>
+          <Route index element={<CartBody/>}/>
+          <Route path='/good-cart/fitnes/:id' element={<CartBody/>}/>
+        </Route>
       </Routes>
     </Router>
   );
