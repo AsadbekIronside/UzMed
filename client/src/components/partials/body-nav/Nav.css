@@ -23,4 +23,94 @@
         font-size: smaller !important;
         padding: 5px !important;
     }
+    .book-search span{
+        padding: 9px 13px;
+    }
+}
+
+/* book appointment */
+.book-search{
+    display: flex;
+    column-gap: 10px;
+}
+.book-search div:first-child{
+    width: 70%;
+}
+.book-search div:last-child{
+    width: calc(100% - 70% - 10px);
+    display: inline-flex;
+    align-items: center;
+}
+.book-search span{
+    border-radius: 5px !important;
+    border: 1px solid red !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+.search-btn:hover{
+    transform: scale(1.04);
+}
+.book-search input{
+    padding: 10px 13px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 163, 163);
+}
+.book-search input:focus{
+    outline: 1px solid rgb(100, 195, 226);
+}
+.book-location{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+.book-location div{
+    width: calc(50% - 5px);
+    position: relative;
+}
+.book-location input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 163, 163);
+    padding: 10px 13px;
+}
+.book-location input:focus{
+    outline: 1px solid rgb(100, 195, 226);;
+}
+.book-location span{
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    cursor: pointer;
+    z-index: 0;
+    background-color: white;
+    padding: 0 4px;
+}
+.common-issues{
+    margin-top: 15px;
+}
+.common-issues ul{
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid lightgray;
+}
+.list-disabled{
+    background-color: rgb(226, 226, 226);
+}
+.common-issues a{
+    text-decoration: none;
+    color: rgb(74, 73, 73);
+    padding: 7px 25px;
+    width: 100%;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.common-issues li{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.common-issues li:hover{
+    background-color: rgb(244, 244, 244);
 }

@@ -1,0 +1,214 @@
+.book-body-search{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    column-gap: 10px;
+}
+.book-body-search .book-location{
+    width: 55%;
+}
+.book-body-search .book-search{
+    width: calc(45% - 10px);
+}
+.book-search div:first-child span{
+    position: absolute;
+    right: 4px;
+    padding: 0 4px;
+    top: 10px;
+    border: none !important;
+    z-index: 0;
+    background-color: white;
+}
+.book-search div:first-child{
+    position: relative;
+}
+.book-body .bread-nav{
+    padding-left: 0;
+}
+.book-search .search-btn{
+    width: 100%;
+    justify-content: center !important;
+    text-align: center;
+}
+.book-body{
+    padding: 0 4.5rem;
+}
+
+/* doctors filetr */
+.book-doctors-filter{
+    padding: 10px;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    column-gap: 15px;
+}
+.book-doctors-filter button{
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    color: rgb(59, 58, 58);
+    font-family: cursive;
+}
+.book-doctors-filter button:hover{
+    transform: scale(1.07);
+}
+.book-doctors-div{
+    width: 75%;
+    float: left;
+}
+.book-login{
+    width: calc(25% - 15px);
+    float: right;
+    background-color: lavender;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+.book-login h5{
+    text-align: center;
+    color: var(--red);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.book-login span{
+    display: block;
+    font-family: var(--shrift1);
+}
+.book-login input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.book-login input:focus{
+    outline: none;
+    border: 1px solid rgb(180, 109, 246);
+}
+.book-login label{
+    display: block;
+    margin-top: 10px;
+}
+.book-login button{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--red);
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    font-weight: 500;
+    color: white;
+}
+.book-login button:hover{
+    background-color: rgb(196, 17, 17);
+}
+
+/* filters */
+.filter-sidebar{
+    width: 35%;
+    float: left;
+    min-height: 270px;
+    background-color: rgb(235, 235, 235);
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.filter-sidebar span{
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.filter-body{
+    width: 65%;
+    float: right;
+    padding: 20px 20px 10px;
+    overflow-y: auto;
+    max-height: 270px;
+    min-height: 270px;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+}
+.book-body .form-check-label{
+    font-weight: 400;
+}
+.book-body .form-check{
+    margin-bottom: 8px;
+}
+.book-body .form-check-input:checked{
+    background-color: var(--red);
+    border-color: var(--red);
+}
+.filter-active{
+    background-color: white;
+    border-left: 2px solid red;
+    outline: none;
+}
+.filter-footer{
+    display: flex;
+    justify-content: end;
+    padding: 15px 25px 6px;
+}
+.filter-footer button{
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15%;
+    font-weight: 500;
+    background-color: var(--red);
+    color: white;
+}
+.filter-footer button:hover{
+    background-color: rgb(197, 17, 17);
+}
+.filter-clear{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: var(--red);
+    cursor: pointer;
+}
+.filter-clear:hover{
+    color: rgb(176, 11, 11);
+}
+@media (max-width:1250px){
+    .book-body{
+        padding: 0 2rem;
+    }
+    .book-doctors-filter button{
+        padding: 6px;
+        white-space: nowrap;
+    }
+    .book-doctors-filter{
+        column-gap: 10px;
+    }
+}
+@media (max-width:1130px){
+    .book-doctors-div{
+        width: 100%;
+    }
+    .book-login{
+        display: none;
+    }
+    .book-doctors-filter{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+@media (max-width:840px){
+    .book-body{
+        padding: 0;
+    }
+    .book-body .bread-nav{
+        padding-left: 15px;
+    }
+    .book-search .search-btn{
+        padding-left: 0;
+        padding-right: 4px;
+    }
+}
+@media (max-width:620px){
+    .filter-sidebar span{
+        font-size: 15px;
+        padding: 10px 2px;
+    }
+}

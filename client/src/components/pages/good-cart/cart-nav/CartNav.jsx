@@ -2,6 +2,7 @@ import "./CartNav.css";
 import DropHover from "../../../dropdowns/DropHover";
 import AllCategories from "./AllCategories";
 import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 const CartNav = () => {
 
@@ -42,10 +43,11 @@ const CartNav = () => {
         {name:"Vazn yig'ish Uchun vositalar", url:"diabet/:weight-cut"}
 
     ]};
-    useEffect(() => {
-        console.log('Multed!');
-        console.log(window.location.href);
-    })
+    // useEffect(() => {
+    //     console.log('Multed!');
+    //     console.log(window.location.href);
+    //     // Cookies.set('user', JSON.stringify({id:'1', name: 'Asadbek', surname: 'Shariyorov'}));
+    // })
 
     return (
         <div className="cart-nav">

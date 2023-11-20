@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./CartBody.css";
 import { Outlet } from "react-router-dom";
 

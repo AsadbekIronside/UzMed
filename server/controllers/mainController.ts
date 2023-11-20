@@ -6,6 +6,9 @@ export async function getUserData (req:Request, res:Response){
     try {
 
         const id = parseInt(JSON.parse(req.cookies['user'])['id']);
+        // console.log(JSON.parse(req.cookies['user']));
+        // console.log(id);
+        
         const result = await get_user_data(id);
         if(result[0]){
             // console.log('result[0] = '+result[0]);
