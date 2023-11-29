@@ -41,6 +41,11 @@
     width: 100%;
     display: flex;
     column-gap: 15px;
+    margin-bottom: 1rem;
+    /* position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 1px 8px 8px -2px #b2b2b2; */
 }
 .book-doctors-filter button{
     border: 1px solid lightgrey;
@@ -63,6 +68,8 @@
     background-color: lavender;
     padding: 20px 25px;
     border-radius: 10px;
+    position: sticky;
+    top: 0;
 }
 .book-login h5{
     text-align: center;
@@ -170,6 +177,332 @@
 .filter-clear:hover{
     color: rgb(176, 11, 11);
 }
+
+/* doctor-profile */
+.book-doctor{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+.book-doctor .find-doctor-div{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 98% !important;
+    margin-bottom: 0;
+    border: none;
+}
+.available-time > span{
+    color: rgb(7, 170, 7);
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+.available-time {
+    margin-top: 10px;
+}
+.available-time p{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.available-time p > span{
+    color: var(--red);
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+.available-time p > span:hover{
+    color: rgb(174, 6, 6);
+}
+/* book appointment button */
+.book-app-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.book-app-btn button{
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 40%;
+    min-width: 300px;
+}
+.book-app-btn button:last-child{
+    background-color: #00a600;
+    border: none;
+    color: white;
+    border: 1px solid #00a600;
+}
+.book-app-btn button:last-child:hover{
+    background-color: #048404;
+}
+.book-app-btn button:first-child{
+    border: 1px solid #3a698e;
+    background-color: white;
+    color: #3a698e;
+}
+.book-app-btn button:first-child:hover{
+    background-color: #3a698e;
+    color: white;
+    transition-property: background-color;
+    transform-style: flat;
+    transition-duration: 0.2s;
+}
+.book-doctor{
+    margin: 10px 5px;
+}
+
+/* prev next */
+.book-doctors-pages{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.book-doctors-pages button{
+    border: 1px solid rgb(205, 9, 9);
+    border-radius: 4px;
+    color: rgb(205, 9, 9);
+    background-color: white;
+    padding: 4px 8px;
+}
+.book-doctors-pages button:hover{
+    background-color: rgb(205, 9, 9);
+    color: white;
+}
+/* doctor available times */
+#close_aval_time{
+    border: none;
+    background-color: inherit;
+    color: var(--red);
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.doctor-modal-header{
+    position: relative;
+    background-color: rgb(254, 250, 234);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+/* timings */
+.timings-date-item{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+    width: calc(100%/3);
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+.timings-date-item p{
+    margin: 0;
+}
+.timings-date-item h1{
+    font-size: 2.1rem;
+    margin: 0;
+}
+.timings-date-item div{
+    line-height: 17px;
+}
+.timings-date{
+    background-color: whitesmoke;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px 10px;
+    position: relative;
+}
+.timings-date span{
+    position: absolute;
+    top: 3px;
+    display: block;
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.8;
+    border: 1px solid lightgrey;
+}
+.timings-date span:hover{
+    transform: scale(1.1);
+}
+.timings-date span:first-of-type{
+    left: 10px;
+}
+.timings-date span:last-of-type{
+    right: 10px;
+}
+
+/* timings times */
+.timings-time{
+    padding: 10px 20px;
+}
+.timings-time h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+}
+.timings-time h5:first-of-type{
+    margin-top: 15px;
+}
+.timings-time h5:last-of-type{
+    margin-top: 25px;
+}
+.timings-time-morning{
+    display: flex;
+    column-gap: 15px;
+    margin: 5px 0 0;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+.timings-time-morning span{
+    padding: 13px 35px;
+    border: 1px solid rgb(6, 173, 6);
+    color: rgb(6, 173, 6);
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+}
+.timings-time-morning span:hover{
+    background-color: rgb(6, 173, 6);
+    color: white;
+}
+/* book-app-final */
+.book-app-final{
+    padding: 15px 20px;
+}
+.book-app-final label{
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: var(--shrift1);
+    margin-top: 10px;
+}
+.book-app-final label:last-of-type{
+    margin-top: 25px;
+}
+.book-app-final input{
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+}
+#time_name{
+    width: 100%;
+}
+.book-app-final input:focus{
+    outline: 1px solid skyblue;
+}
+#country_code{
+    width: 20%;
+    padding: 15px 0;
+    text-align: center;
+}
+#country_code:focus{
+    outline: none;
+}
+#time_phone{
+    width: 78%;
+    float: right;
+}
+.book-app-final h6{
+
+}
+.book-app-final button:first-child{
+    width: 100%;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    color: white;
+    font-weight: 500;
+    padding: 14px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.book-app-final button:first-child:hover{
+    background-color: var(--darkred);
+}
+.book-app-final button:last-child{
+    background-color: var(--red);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 6px;
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+.book-app-final button:last-child:hover{
+    background-color: var(--darkred);
+}
+.book-app-final h6 > span{
+    color: darkblue;
+}
+.book-app-final p{
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+    font-size: smaller;
+    padding: 2px;
+}
+.swal-class{
+    border-radius: 15px;
+}
+/* call doctor modal */
+.call-doctor label{
+    font-family: var(--shrift1);
+    display: block;
+    width: 100%;
+    font-size: large;
+    margin-top: 10px;
+}
+.call-doctor label:last-of-type{
+    margin-top: 25px;
+}
+.call-doctor input{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.call-doctor input:focus{
+    outline: 1px solid rgb(113, 207, 238);
+}
+.call-doctor input:first-child{
+    width: 100%;
+}
+.contact-phone{
+    display: flex;
+    column-gap: 6px;
+}
+.contact-phone input:first-of-type{
+    width: 80px;
+}
+.contact-phone input:first-of-type:focus{
+    outline: none;
+}
+.contact-phone input:last-of-type{
+    width: calc(100% - 70px);
+}
+.contact-submit{
+    padding: 10px !important;
+    width: 100% !important;
+    margin-top: 20px;
+    margin-left:  0 !important;
+    border-radius: 10px !important;
+}
+.btn-disabled{
+    border-color: lightgray !important;
+    color: gray !important;
+}
+.btn-disabled:hover{
+    background-color: white !important;
+    color: gray !important;
+}
 @media (max-width:1250px){
     .book-body{
         padding: 0 2rem;
@@ -205,10 +538,59 @@
         padding-left: 0;
         padding-right: 4px;
     }
+    .book-doctor .find-doctor-profile{
+        flex-wrap: nowrap;
+    }
 }
 @media (max-width:620px){
     .filter-sidebar span{
         font-size: 15px;
         padding: 10px 2px;
+    }
+    .book-body-search{
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+    .book-body-search .book-location{
+        width: 96%;
+        margin: auto;
+    }
+    .book-body-search .book-search{
+        width: 96%;
+        margin: auto;
+    }
+    .book-body-search input{
+        padding: 7px 10px;
+    }
+    .book-body-search .search-btn{
+        padding: 7px;
+    }
+    .book-body-search .book-location span{
+        top: 8px !important;
+    }
+    .book-body-search .book-search span{
+        top: 8px !important;
+    }
+}
+@media (max-width:400px){
+    .book-doctor .find-doctor-img{
+        height: 90px;
+    }
+    .book-doctor .find-doctor-profile{
+        column-gap: 10px;
+    }
+    .book-app-btn{
+        font-size: smaller;
+    }
+    .book-app-btn button{
+        padding: 6px;
+    }
+}
+@media (max-width:700px){
+    .filter_btns{
+        display: none;
+    }
+    .book-doctors-filter button:first-child{
+        width: 50%;
     }
 }

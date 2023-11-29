@@ -11,8 +11,8 @@ const Breadcrumb = ({ items }) => {
                 <ol className="breadcrumb">
                     {items.map( (item, index) => {
                         if(index === items.length-1)
-                            return <li className="breadcrumb-item active" aria-current="page">{t(item.name)}</li>;  
-                            return <li className="breadcrumb-item"><Link to={item.url}>{t(item.name)}</Link></li>
+                            return <li key={index} className="breadcrumb-item active" aria-current="page">{t(item.name)}</li>;  
+                            return <li key={index} className="breadcrumb-item"><Link to={item.url}>{t(item.name)}</Link></li>
                             } )}
                 </ol>
             </nav>

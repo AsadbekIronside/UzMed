@@ -19,9 +19,12 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "form-data": "^4.0.0",
+    "helmet": "^7.1.0",
     "http": "^0.0.1-security",
+    "https": "^1.0.0",
     "knex": "^3.0.1",
     "mysql2": "^3.6.2",
+    "rate-limiter-flexible": "^3.0.4",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {

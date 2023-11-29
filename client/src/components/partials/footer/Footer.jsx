@@ -82,6 +82,9 @@ const Footer = () => {
         },
         (err)=> {console.log(err);});
     }
+    const changeLocation = (e) => {
+        setLocation(e.target.value);
+    }
 
     return (
        <div className="container-fluid">
@@ -95,7 +98,7 @@ const Footer = () => {
                     </div>
                     <div className="search-location">
                        <span onClick={() => {focusSearchClinic(2)}}>Joylashuv</span>
-                       <input className="text-muted w-100" type="text" placeholder="Shahar yoki tuman" onFocus={() => {focusSearchClinic(2)}} value={location}></input>
+                       <input className="text-muted w-100" type="text" placeholder="Shahar yoki tuman" onFocus={() => {focusSearchClinic(2)}} value={location} onChange={changeLocation}></input>
                     </div>
                     <div className="search-btn-div">
                         <button type="button" className="search-btn"><b>Search</b></button>
@@ -132,9 +135,9 @@ const Footer = () => {
                   </div>
                   <div className="offcanvas-form">
                         <label className="form-label" htmlFor="searchInput"> Doktorlarni kasallik va kategoriya bo'yicha izlash</label>
-                        <input className="form-control" id="searchInput" type="text" placeholder="E.g. Oshqozon og'rig'i" onFocus={()=>{}}></input>
+                        <input className="form-control" id="searchInput" type="text" placeholder="E.g. Oshqozon og'rig'i"></input>
                         <label className="form-label" htmlFor="searchLocation">Joylashuv</label>
-                        <input className="form-control text-muted" id="searchLocation" type="text" placeholder="Shahar yoki tuman" value={location}/>
+                        <input className="form-control text-muted" id="searchLocation" type="text" placeholder="Shahar yoki tuman" value={location} onChange={changeLocation}/>
                     </div>
                   <div className="offcanvas-body pt-3 ps-3">
                      <Link className="current-location" onClick={getCurrentPosition}><FontAwesomeIcon icon={faLocationDot} size="lg"/> Hozirgi joylashuv</Link>

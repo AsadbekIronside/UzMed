@@ -15,7 +15,8 @@ const Header = () => {
       if(Cookie.get('user')){
         var userData = JSON.parse(Cookie.get('user'));
         setUser(userData['f_name']+' '+userData['l_name']);
-      };
+        // console.log(Cookie.get('user'));
+      }
     }, []);
 
     return (

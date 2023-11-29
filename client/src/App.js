@@ -10,6 +10,8 @@ import CartBody from './components/pages/good-cart/cart-body/CartBody';
 import CartLayout from './components/pages/good-cart/CartLayout';
 import Layout from './components/partials/Layout';
 import BookApp from './components/pages/book-app/BookApp';
+import AskQuestion from './components/pages/ask-question/AskQuestion';
+import News from './components/pages/news/News';
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
           <Route path='/find-doctor' element={<FindDoctor />} />
           <Route path='/find-doctor/doctors-list' element={<Doctors />} />
           <Route path='/book-app' element={<BookApp/>}/>
+          <Route path='/treatment' element={<BookApp/>}/>
+          <Route path='/ask-question' element={<AskQuestion/>}/>
+          <Route path='/news' element={<News/>}/>
         </Route>
         <Route path='/error-500' element={<ServerError />} />
         <Route path='/user-profile/:page' element={<><UserHeader /><UserProfile /></>} />
